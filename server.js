@@ -265,7 +265,7 @@ async function setupTelegramWebhook(baseUrl) {
 }
 
 // ─── Start ────────────────────────────────────────────────────────────
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`\n🏋️  Sisu Coach running on port ${PORT}`);
 
   // If we have a PUBLIC_URL (set by Railway or manually), wire up Telegram
